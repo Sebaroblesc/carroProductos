@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        ></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_del_producto"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_prod_txt_cr">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio_label"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio_prod_txt_cr"
+        android:inputType="numberSigned"></EditText>
+    <TextView
+        android:text="@string/url_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:textSize="@dimen/titulo_app_size">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto_txt_cr"
+        android:inputType="textUri"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion_label"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:textSize="@dimen/titulo_app_size"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripcion_prod_txt_cr"
+        android:inputType="textMultiLine"
+        ></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/crear_btn"
+        android:text="CREAR PRODUCTO"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></Button>
+</LinearLayout>
